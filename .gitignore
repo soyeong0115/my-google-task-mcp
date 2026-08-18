@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+# Access tokens must never be committed.
+.google-tasks-token
+*.token
+.token
+.env
+.env.*
+!.env.example

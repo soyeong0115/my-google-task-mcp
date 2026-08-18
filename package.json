@@ -1,0 +1,45 @@
+{
+  "name": "google-tasks-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for the Google Tasks API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "google-tasks-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyeong0115/my-google-task-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "google-tasks"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soyeong0115/my-google-task-mcp/issues"
+  },
+  "homepage": "https://github.com/soyeong0115/my-google-task-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
